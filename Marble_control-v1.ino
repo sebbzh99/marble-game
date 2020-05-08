@@ -9,6 +9,7 @@
 #include <SoftwareSerial.h>
 SoftwareSerial Camera(13, 12); // RX, TX
 
+
 SingleEMAFilter<float> CameraEMAfilter(0.2);
 SingleEMAFilter<float> accelXEMAfilter(0.1);
 SingleEMAFilter<float> accelYEMAfilter(0.1);
